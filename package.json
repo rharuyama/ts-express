@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npx ts-node ./bin/www.ts"
+    "start": "node ./built/bin/www.js",
+    "build": "tsc"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
