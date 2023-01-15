@@ -104,4 +104,6 @@ dist
 .tern-port
 
 # custom
-built/
+built/app.js
+built/bin/*
+built/routes/*
