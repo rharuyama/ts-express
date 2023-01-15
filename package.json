@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./built/bin/www.js",
+    "start": "npm run build && node ./built/bin/www.js",
     "build": "tsc"
   },
   "dependencies": {

@@ -2,7 +2,7 @@
 ```
 npm i 
 npm run build
-npm run start
+npm start # or npm run start, which is equivalent command
 ```
 
 ## References
