@@ -1,8 +1,7 @@
 # Run
 ```
 npm i 
-npm run build
-npm start # or npm run start, which is equivalent command
+DEBUG=ts-express:* npm start # or just npm start
 ```
 
 ## References
