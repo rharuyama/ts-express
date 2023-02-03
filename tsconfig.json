@@ -3,6 +3,8 @@
       "outDir": "./built",
       "target": "es5",
       "strict": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
     },
-    "include": ["./bin/www.ts", "./app.ts", "./routes/**/*"]
-}
+    "include": ["./bin/www.ts", "./app.ts", "./routes/**/*"],
+  }
