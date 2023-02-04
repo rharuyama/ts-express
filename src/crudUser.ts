@@ -2,8 +2,11 @@ import "reflect-metadata";
 import { AppDataSource } from "./db-config";
 import { User } from "./entity/User";
 
-export async function createNewUser() {
+export async function initDB(){
     await AppDataSource.initialize();
+}
+
+export async function createNewUser() {
     const user = new User();
     user.firstName = "Ludwig";
     user.lastName = "Wittgenstein";
@@ -19,7 +22,7 @@ export async function createNewUser() {
 }
 
 export async function readUser(): Promise<any>{
-    await AppDataSource.initialize();
+//    await AppDataSource.initialize();
     const userRegistory = AppDataSource.getRepository(User);
     const user = await userRegistory.findOneBy({
         id: 0,

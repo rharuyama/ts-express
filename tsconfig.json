@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
       "outDir": "./built",
-      "target": "es5",
+      "target": "es6",
       "strict": true,
+      "module": "commonjs",
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
     },
