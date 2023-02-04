@@ -37,9 +37,11 @@ function readUser() {
     return __awaiter(this, void 0, void 0, function* () {
         //    await AppDataSource.initialize();
         const userRegistory = db_config_1.AppDataSource.getRepository(User_1.User);
-        const user = yield userRegistory.findOneBy({
-            id: 0,
-        });
+        /*     const user = await userRegistory.findOneBy({
+                id: 0,
+            })
+         */
+        const user = yield userRegistory.find({});
         return user;
     });
 }

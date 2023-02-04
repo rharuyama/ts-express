@@ -24,8 +24,10 @@ export async function createNewUser() {
 export async function readUser(): Promise<any>{
 //    await AppDataSource.initialize();
     const userRegistory = AppDataSource.getRepository(User);
-    const user = await userRegistory.findOneBy({
+/*     const user = await userRegistory.findOneBy({
         id: 0,
     })
+ */
+    const user = await userRegistory.find({});
     return user;
 }
